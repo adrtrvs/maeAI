@@ -3,7 +3,6 @@ import React from 'react';
 import HomePage from '@/pages/HomePage';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/ThemeProvider';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function App() {
   return (
