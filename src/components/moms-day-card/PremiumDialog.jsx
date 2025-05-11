@@ -44,7 +44,7 @@ const PremiumDialog = ({ onStripeCheckout }) => {
             Pagar com Stripe
           </Button>
         </DialogFooter>
-    {/*     <div className="mt-6 p-4 border-t border-pink-200">
+        {/* <div className="mt-6 p-4 border-t border-pink-200">
           <h4 className="font-semibold text-pink-700 mb-2">Para ativar o pagamento com Stripe:</h4>
           <ol className="list-decimal list-inside text-sm text-pink-600 space-y-1">
             <li>Crie uma conta no Stripe (se ainda não tiver): <a href="https://dashboard.stripe.com/register" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">Registrar no Stripe</a></li>
