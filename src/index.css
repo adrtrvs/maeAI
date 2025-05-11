@@ -1,0 +1,194 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 346.8 77.2% 49.8%; /* Vibrant Pink */
+    --primary-foreground: 355.7 100% 97.3%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 216 12.2% 43.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 346.8 77.2% 49.8%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 346.8 77.2% 49.8%;
+    --primary-foreground: 355.7 100% 97.3%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 346.8 77.2% 49.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Inter', sans-serif; /* Default modern font */
+  }
+}
+
+.polaroid {
+  @apply bg-white p-1.5 sm:p-2 shadow-md hover:shadow-xl relative transform transition-all duration-300 ease-in-out;
+  border: 1px solid #e0e0e0; 
+}
+
+.polaroid img {
+  @apply w-full h-auto object-cover block; 
+  border: 1px solid #f5f5f5; 
+}
+
+.polaroid-caption-area {
+  @apply pt-2 pb-1 px-1 text-center; 
+  min-height: 20px; 
+}
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+.font-inter { font-family: 'Inter', sans-serif; }
+.font-pacifico { font-family: 'Pacifico', cursive; }
+.font-caveat { font-family: 'Caveat', cursive; }
+.font-dancing-script { font-family: 'Dancing Script', cursive; }
+.font-montserrat { font-family: 'Montserrat', sans-serif; }
+.font-lobster { font-family: 'Lobster', cursive; }
+.font-great-vibes { font-family: 'Great Vibes', cursive; }
+.font-sacramento { font-family: 'Sacramento', cursive; }
+.font-kalam { font-family: 'Kalam', cursive; }
+.font-cookie { font-family: 'Cookie', cursive; }
+.font-satisfy { font-family: 'Satisfy', cursive; }
+
+
+.handwritten-font { 
+  font-family: 'Caveat', cursive;
+}
+
+.card-preview-area-capture-for-download, .preview-section-container {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.card-preview-area-capture-for-download img, .preview-section-container img {
+  object-fit: contain !important; 
+}
+
+
+/* Animated Backgrounds */
+.animated-hearts-bg {
+  background-color: #ffe4e1; 
+  background-image: 
+    radial-gradient(circle, #ffb6c1 10%, transparent 11%), 
+    radial-gradient(circle, #ff69b4 10%, transparent 11%); 
+  background-size: 40px 40px, 60px 60px;
+  background-position: 0 0, 20px 20px;
+  animation: floatHearts 15s linear infinite;
+}
+
+.animated-flowers-bg {
+  background-color: #f0fff0; 
+  background-image: 
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFC0CB' fill-opacity='0.4'%3E%3Cpath d='M30 0C13.432 0 0 13.432 0 30s13.432 30 30 30 30-13.432 30-30S46.568 0 30 0zm0 50c-11.046 0-20-8.954-20-20S18.954 10 30 10s20 8.954 20 20-8.954 20-20 20zm0-30c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10z'/%3E%3C/g%3E%3Cg fill='%2390EE90' fill-opacity='0.4'%3E%3Cpath d='M15 15h30v30H15z' transform='rotate(45 30 30)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+  animation: floatFlowers 20s linear infinite;
+}
+
+@keyframes floatHearts {
+  0% { background-position: 0 0, 20px 20px; }
+  100% { background-position: 400px 400px, 420px 420px; }
+}
+
+@keyframes floatFlowers {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 320px; }
+}
+
+.bg-subtle-sparkle {
+  background-color: #fff0f5; 
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-subtle-sparkle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, rgba(255,228,225,0.5) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: sparkle 10s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes sparkle {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(5px,5px); }
+  50% { transform: translate(0,10px); }
+  75% { transform: translate(-5px,5px); }
+  100% { transform: translate(0,0); }
+}
+  
